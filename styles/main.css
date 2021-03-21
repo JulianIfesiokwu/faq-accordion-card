@@ -11,20 +11,19 @@ body {
 }
 
 .container {
-    width: 60%;
+    width: 50%;
     max-height: 400px;
-    padding: 4rem 4rem 4rem 0;
+    padding: 3rem 3rem 3rem 0;
     margin: 8rem auto;
     background-color: #fff;
     border-radius: 20px;
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: space-around;    
 }
 
 h1 {
     color: hsl(237, 12%, 33%);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .main-image {
@@ -35,20 +34,38 @@ h1 {
     display: block;
 }
 
+.faq {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .questions {
     width: 100%;
     font-size: 12px;
     font-weight: 700;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid black;
+    color: hsl(240, 6%, 50%);
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+.question {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
 }
 
-.questions img {
-    display: inline-block;
+.question:hover {
+    color: hsl(14, 88%, 65%);
+}
+
+.tick {
+    padding-right: 10px;
 }
 
 .answers {
     font-weight: 400;
     padding-top: 1rem;
+    display: none;
 }
