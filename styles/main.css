@@ -17,7 +17,7 @@ body {
 
 .container {
     width: 50%;
-    min-height: 21rem;
+    min-height: auto;
     padding: 2rem 2rem 2rem 0;
     margin: 3rem auto;
     background-color: #fff;
