@@ -6,19 +6,28 @@
     font-family: 'Kumbh Sans', sans-serif;
 }
 
+html {
+    font-size: 16px;
+}
+
 body {
     background-image: linear-gradient( to right, hsl(273, 75%, 66%), hsl(240, 73%, 65%)) ;
+    position: relative;
 }
 
 .container {
     width: 50%;
-    max-height: 400px;
-    padding: 3rem 3rem 3rem 0;
-    margin: 8rem auto;
+    min-height: 21rem;
+    padding: 2rem 2rem 2rem 0;
+    margin: 5rem auto;
     background-color: #fff;
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 1260% 65%;
     border-radius: 20px;
     display: flex;
-    justify-content: space-around;    
+    justify-content: space-around;
+    overflow: hidden;
 }
 
 h1 {
@@ -30,8 +39,18 @@ h1 {
     width: 45%;
 }
 
-.main-image img {
-    display: block;
+#box {
+    position: relative;
+    top: 238px;
+    right: 125px;
+    z-index: 5;
+}
+
+#woman {
+    position: relative;
+    bottom: 80px;
+    right: 125px;
+    z-index: 3;
 }
 
 .faq {
@@ -56,6 +75,10 @@ h1 {
     cursor: pointer;
 }
 
+.dark-question {
+    color: hsl(238, 29%, 16%)
+}
+
 .question:hover {
     color: hsl(14, 88%, 65%);
 }
@@ -68,4 +91,59 @@ h1 {
     font-weight: 400;
     padding-top: 1rem;
     display: none;
+    line-height: 1.3rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        min-height: auto;
+        margin: 6rem auto;
+        padding: 1rem;
+    }
+
+    #box {
+        position: absolute;
+        top: -35px;
+        left: 80px;
+        width: 80px;
+        height: 80px;
+    }
+
+    #woman {
+        position: absolute;
+        top: -90px;
+        left: 5.625rem;
+        width: 200px;
+        height: 150px;
+    }
+
+    .faq {
+        margin-top: 5rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    h1 {
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+     
+    .questions {
+        margin-right: 70px;
+        padding: 0;
+    }
+
+    .question {
+        margin-bottom: 1rem;
+    }
+
+    .questions .answers{
+        text-align: start;
+        line-height: 1.3rem;
+    }
+
+
 }
